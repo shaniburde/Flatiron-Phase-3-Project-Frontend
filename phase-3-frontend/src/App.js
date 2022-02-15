@@ -15,8 +15,8 @@ function App() {
    return (
  <Routes>
       <Route exact path='/my-events' element={<EventContainer data={data}/>}/>
-      <Route exact path='/create-event' />
-      <Route exact path='/create-venue' />
+      {/* <Route exact path='/create-event' element={<EventForm />} />
+      <Route exact path='/create-venue' element={<VenueForm />} /> */}
  </Routes>
      
    
