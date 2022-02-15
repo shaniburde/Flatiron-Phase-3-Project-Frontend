@@ -5,7 +5,8 @@ import { NavLink } from 'react-router-dom';
 export default function NavBar() {
   return (
     <div>
-        <NavLink to="my-events" className="button"  activeStyle={{
+        <NavLink to="/my-events" exact className="button"  
+        activeStyle={{
             background: "#fffdef",
             color: "#39442e",
             textShadow: "none",
