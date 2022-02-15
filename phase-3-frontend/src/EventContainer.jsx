@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react'
+import EventList from './EventList'
 
-function EventContainer() {
+function EventContainer({data}) {
     return(
-        <div>Hi Hain!</div>
+    <>
+    <h1>Event List</h1>
+        <EventList data={data}/>
+    </>
     )
 }
 

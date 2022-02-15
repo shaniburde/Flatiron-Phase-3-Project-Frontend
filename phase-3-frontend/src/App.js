@@ -1,7 +1,8 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 import EventContainer from './EventContainer';
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import Header from './Header';
 
 function App() {
   const [data, setData] = useState([])
@@ -13,14 +14,14 @@ function App() {
   }, [])
 
    return (
- <Routes>
-      <Route exact path='/my-events' element={<EventContainer data={data}/>}/>
-      {/* <Route exact path='/create-event' element={<EventForm />} />
-      <Route exact path='/create-venue' element={<VenueForm />} /> */}
- </Routes>
-     
-   
-  
+    <>
+    <Header/>
+      <Routes>
+            <Route exact path='/my-events' element={<EventContainer data={data}/>}/>
+            {/* <Route exact path='/create-event' element={<EventForm />} />
+            <Route exact path='/create-venue' element={<VenueForm />} /> */}
+      </Routes>  
+    </>
   );
 }
 
