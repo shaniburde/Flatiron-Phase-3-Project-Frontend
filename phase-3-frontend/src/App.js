@@ -19,7 +19,7 @@ function App() {
     <>
     <Header/>
       <Routes>
-            <Route exact path='/my-events' element={<EventContainer data={data}/>}/>
+            <Route exact path='/my-events' element={<EventContainer data={data} setData={setData}/>}/>
             <Route exact path='/create-event' element={<EventForm />} />
             <Route exact path='/create-venue' element={<VenueForm />} />
       </Routes>  
