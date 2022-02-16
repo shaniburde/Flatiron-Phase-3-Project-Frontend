@@ -14,3 +14,8 @@
   float: right;
   border-radius: 30%;
 }
+
+.edit-btn{
+  float: left;
+  border-radius: 30%;
+}

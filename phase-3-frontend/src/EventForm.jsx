@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 
 export default function EventForm({ addEvent }) {
-    const [attendees, setAttendees] = useState(0);
+    const [attendees, setAttendees] = useState("");
     const [eventType, setEventType] = useState("");
-    const [price, setPrice] = useState(0);
+    const [price, setPrice] = useState("");
     const [date, setDate] = useState("");
     const [venueData, setVenueData] = useState([]);
     const [venue, setVenue] = useState('')
