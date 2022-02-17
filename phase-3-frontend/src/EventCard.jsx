@@ -37,7 +37,7 @@ function EventCard({data, handleDeleteEvent, handleUpdateEvent}) {
           <h5>{date}</h5>
           <div className="price">🎟️ ${price}</div>
           <div className="attendees">Attendees: {attendees}</div>
-          <h5 onClick={() => setVisible(!visible)}>Venue Info</h5>
+          <h5 className="venue-info" onClick={() => setVisible(!visible)}>Venue Info</h5>
           {visible ? <div> 
             <div>{venue_name}</div>
             <div>Address: {address}</div>

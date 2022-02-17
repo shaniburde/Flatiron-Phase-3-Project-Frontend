@@ -32,7 +32,7 @@ h1{
   font-family: Misto;
   color: #f7c46d;
   text-shadow: 2px 5px #8daa95;
-  /* padding: 0px; */
+  letter-spacing: 10px;
 }
 
 h2{
@@ -53,6 +53,7 @@ h3{
   letter-spacing: 3px;
   text-shadow: 2px 2px #ffeac7;
   margin: 20px;
+  padding-top: 30px;
 }
 h5{
   margin: 10px;
@@ -67,15 +68,21 @@ h5{
 }
 
 input{
+  padding: 1%;
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
   width: 100%;
   font-family: Butler;
   color: #183E4E;
   background-color: #FEF7EC;
-  border-color:#566b6b;
-  border-width: 1px;
+  border-width: 0px;
+}
+input:hover{
+  box-shadow: 0px 0px 4px #555252;
 }
 form{
-  padding: 10%;
+  padding: 5%;
   text-align: center;
 }
 select{
@@ -127,15 +134,39 @@ select{
   gap: 2% 2%;
   
 }
-
 .delete-event-btn{
+  font-size: 17px;
+  width: 35px;
+  height: 35px;
   float: right;
-  border-radius: 30%;
+  border-radius: 50%;
+  border: none;
+  transition: .3s;
+  color: transparent;
+  background-color: transparent;
+  transition: .3s;
 }
 
+.delete-event-btn:hover{
+  color:rgba(0, 0, 0, 0.644);
+  background-color: #FEF7EC;
+  box-shadow: 0px 0px 3px #183E4E;
+}
 .edit-btn{
+  display: hidden;
+  width: 35px;
+  height: 35px;
   float: left;
-  border-radius: 30%;
+  border-radius: 50%;
+  border: none;
+  color: transparent;
+  background-color: transparent;
+  transition: .3s;
+}
+.edit-btn:hover{
+  color:rgba(0, 0, 0, 0.644);
+  background-color: #FEF7EC;
+  box-shadow: 0px 0px 3px #183E4E;
 }
 
 .edit-event{
@@ -157,6 +188,16 @@ select{
   border-radius: 15px;
   border: none
 }
+button.form-input{
+  letter-spacing: 10px;
+  font-family: Misto;
+  color:#98BEA2;
+  background-color:#F5C675;
+  text-shadow: 2px 2px 2px#112831;
+}
+button.form-input:hover{
+ box-shadow: 3px 3px 3px #000000;
+}
 
 .input-label{
   font-size: 30px;
@@ -174,6 +215,7 @@ select{
 }
 
 .save-button{
+  font-family: Butler;
   background-color: #183E4E;
   border: none;
   padding: 5px;
@@ -182,6 +224,17 @@ select{
   align-content: center;
   text-shadow: 1px 2px #000000;
   border-radius: 5px;
+  transition: .4s;
+}
+.save-button:hover{
+  box-shadow: 0px 0px 6px #FEF7EC;
+  transition: .4s;
+}
+.save-button:active{
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    box-shadow: 0px 0px 6px #FEF7EC;
 }
 .card{
   width: 70%;
@@ -189,6 +242,8 @@ select{
   background-color: #98BEA2;
 }
 .nav-button{
+  font-family: Misto;
+  letter-spacing: 3px;
   text-decoration: none;
   background-color: #98BEA2;
   text-shadow: 1px 1px #293d50;
@@ -198,10 +253,28 @@ select{
   padding: 1.5%;
   border-radius: 20px;
   font-weight: bold;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.644);
+  border-bottom: solid 5px #000000;
+  overflow: hidden;
   transition: .5s;
 }
 .nav-button:hover{
   background-color: #F5C675;
   color:#98BEA2;
-  text-shadow: 1px 1px #FEF7EC;
+  text-shadow: 1px 1px white;
+}
+.nav-button:active{
+  -ms-transform: translateY(3px);
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+  box-shadow: 0 0 1.5px rgba(0, 0, 0, 0.35);
+  border-bottom: none;
+}
+.venue-info{
+  transition: .5s;
+}
+.venue-info:hover{
+  text-decoration: underline;
+  color:#183e4e;
+  text-shadow: 3px 0px 0px #bcc3c9;
 }

@@ -5,7 +5,7 @@ function VenueForm() {
   const [venue, setVenue] = useState("");
   const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
-  const [capacity, setCapacity] = useState(0);
+  const [capacity, setCapacity] = useState('');
 
 
 function handleVenueChange(e) {
@@ -102,7 +102,7 @@ function handleCapacityChange(e) {
         </input>
         <br/>
         <br/>
-        <button className="form-input" type="submit">Add New Venue</button> 
+        <button className="form-input" type="submit">Create Venue</button> 
         </form>
     </>
   )
