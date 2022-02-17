@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 function VenueForm() {
 
@@ -6,6 +7,7 @@ function VenueForm() {
   const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
   const [capacity, setCapacity] = useState('');
+  let navigate = useNavigate();
 
 
 function handleVenueChange(e) {
@@ -41,6 +43,7 @@ function handleCapacityChange(e) {
       })
       .then(response => response.json())
       .then((data) => console.log(data))  
+      .then(navigate("/create-event", { replace: true }))
     //   setVenue('')
     //   setAddress('')
     //   setPhone('')

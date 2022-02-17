@@ -52,8 +52,6 @@ h3{
   font-weight: bold;
   letter-spacing: 3px;
   text-shadow: 2px 2px #ffeac7;
-  margin: 20px;
-  padding-top: 30px;
 }
 h5{
   margin: 10px;
@@ -100,9 +98,13 @@ select{
 }
 
 .card {
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     text-align: center;
-    padding: 5%;
+    padding: 3%;
     border-radius: 20px;
     box-shadow: 5px 5px #183E4E;
     transition: .7s;
@@ -131,7 +133,7 @@ select{
   margin: 0 auto;
   grid-template-columns: auto auto auto auto;
   grid-auto-rows: 9%;
-  gap: 2% 2%;
+  gap: 5% 4%;
   
 }
 .delete-event-btn{
@@ -277,4 +279,7 @@ button.form-input:hover{
   text-decoration: underline;
   color:#183e4e;
   text-shadow: 3px 0px 0px #bcc3c9;
+}
+.delete-edit-buttons{
+  padding: 4%;
 }

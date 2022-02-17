@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 
 
 export default function EventForm({ addEvent }) {
@@ -8,7 +9,7 @@ export default function EventForm({ addEvent }) {
     const [date, setDate] = useState("");
     const [venueData, setVenueData] = useState([]);
     const [venue, setVenue] = useState('')
-
+    let navigate = useNavigate();
 
     function handleAttendeesChange(e){
         setAttendees(e.target.value)
@@ -40,9 +41,10 @@ export default function EventForm({ addEvent }) {
               })
               .then(response => response.json())
               .then((data) => console.log(data))  
-              setAttendees(0)
+              .then(navigate("/my-events", { replace: true }))
+              setAttendees("")
               setEventType('')
-              setPrice(0)
+              setPrice("")
               setDate('')
               
       }
