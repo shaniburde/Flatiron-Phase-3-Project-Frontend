@@ -9,10 +9,13 @@
 }
 .app{
   background-color: #FEF7EC;
-  margin: 0 auto;
-  padding: 0;
-}
 
+}
+html{
+  background-color: #FEF7EC ;
+  padding: 0 auto;
+  margin: 0px auto;
+}
 body{
   font-family: Butler;
   color: #f7c46d;
@@ -98,8 +101,8 @@ select{
 }
 
 .card {
+    align-content: center;
     height: fit-content;
-    align-items: center;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -273,13 +276,44 @@ button.form-input:hover{
   border-bottom: none;
 }
 .venue-info{
+  background-color:#F5C675;
+  color: #FEF7EC;
+  text-shadow: 2px 1px 1px#112831;
+  box-shadow: 0px  3px  #112831;
+  border-radius: 20px;
+  padding: 5px;
   transition: .5s;
 }
 .venue-info:hover{
   text-decoration: underline;
   color:#183e4e;
-  text-shadow: 3px 0px 0px #bcc3c9;
+  text-shadow: 1px 1px 1px #86969e;
+  box-shadow: 0px  1px  #112831;
 }
 .delete-edit-buttons{
   padding: 4%;
+}
+.address{
+  font-family: Butler;
+  font-size: 20px;
+  color:#112831;
+  text-shadow: 1px 1px #f0f3f7;
+}
+
+.capacity{
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #112831;
+}
+.phone{
+  color: #6AA6A4;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #112831;
+  background-color: #FEF7EC;
+  border-radius: 30px;
+  padding: 6px;
+}
+.venue-card{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }

@@ -47,12 +47,12 @@ function EventCard({data, handleDeleteEvent, handleUpdateEvent}) {
           <h5 className="venue-info" onClick={() => setVisible(!visible)}>Venue Info</h5>
       </>
       )} </div>) : (
-        <div> 
+        <div className="venue-card"> 
           <h5 className="venue-info" onClick={() => setVisible(!visible)}>Concert Info</h5>
-          <div>{venue_name}</div>
-          <div>Address: {address}</div>
-          <div>Capacity: {capacity}</div>
-          <div>{phone}</div>
+          <h5>{venue_name}</h5>
+          <p className="address">Address: {address}</p>
+          <p className="capacity">Capacity: {capacity}</p>
+          <p className='phone'>{phone}</p>
         </div>
       )}
     </div>
