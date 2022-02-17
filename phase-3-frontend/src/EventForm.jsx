@@ -68,7 +68,9 @@ export default function EventForm({ addEvent }) {
 
   return (
     <>
-    <h1>Add an Event</h1>
+    <br/>
+    <h2>Add an Event</h2>
+    <br/>
     <form onSubmit={handleSubmit} className="form">
     <label className="input-label" htmlFor="venue-data">Venues: </label>
     <br/>

@@ -9,7 +9,8 @@
 }
 .app{
   background-color: #FEF7EC;
-  margin: 0
+  margin: 0 auto;
+  padding: 0;
 }
 
 body{
@@ -30,13 +31,48 @@ h1{
   background-color: #183E4E;
   font-family: Misto;
   color: #f7c46d;
+  text-shadow: 2px 5px #8daa95;
   /* padding: 0px; */
+}
+
+h2{
+  font-family: Misto;
+  font-size: 50px;
+  text-align: center;
+  color: #183E4E;
+  text-shadow: 0px 2px #f7c46d;
+}
+
+h3{
+  font-family: Misto;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+  color: #112831;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px #ffeac7;
+  margin: 20px;
+}
+h5{
+  margin: 10px;
+  font-family: Butler;
+  font-size: 25px;
+  text-align: center;
+  justify-content: center;
+  color: #ffeac7;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px #112831;;
 }
 
 input{
   width: 100%;
   font-family: Butler;
-  color: #f7c46d;
+  color: #183E4E;
+  background-color: #FEF7EC;
+  border-color:#566b6b;
+  border-width: 1px;
 }
 form{
   padding: 10%;
@@ -57,20 +93,39 @@ select{
 }
 
 .card {
+    margin: 0 auto;
     text-align: center;
     padding: 5%;
-    margin: 1%;
     border-radius: 20px;
     box-shadow: 5px 5px #183E4E;
+    transition: .7s;
 }
 .card:hover{
   box-shadow: 5px 5px #ffca74;
-  transform: rotate(0.01turn);
+}
+
+.price{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Butler;
+  color:#FEF7EC;
+  text-shadow: 3px 1px #112831;
+}
+
+.attendees{
+  font-size: 20px;
+  font-family: Butler;
+  text-shadow: 1px 1px #FEF7EC;
+  color: #112831;
+  margin: 15px;
 }
 .event-list{
   display: grid;
+  margin: 0 auto;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 2%;
+  grid-auto-rows: 9%;
+  gap: 2% 2%;
+  
 }
 
 .delete-event-btn{
@@ -91,7 +146,9 @@ select{
 }
 
 .form-label{
-  font-size: medium;
+  font-size: 20px;
+  text-shadow: 1px 1px#183E4E;
+
 }
 
 .form-input{
@@ -112,15 +169,23 @@ select{
   width: 100%;
   display: block;
   border-radius: 5px;
-  text-shadow: 1px 1px #293d50;
+  text-shadow: 1px 1px #bcc3c9;
   font-size: 20px;
 }
 
 .save-button{
+  background-color: #183E4E;
+  border: none;
+  padding: 5px;
+  color:#FEF7EC;
+  font-size: 20px;
   align-content: center;
+  text-shadow: 1px 2px #000000;
   border-radius: 5px;
 }
 .card{
+  width: 70%;
+  height: 100%;
   background-color: #98BEA2;
 }
 .nav-button{
@@ -133,6 +198,7 @@ select{
   padding: 1.5%;
   border-radius: 20px;
   font-weight: bold;
+  transition: .5s;
 }
 .nav-button:hover{
   background-color: #F5C675;

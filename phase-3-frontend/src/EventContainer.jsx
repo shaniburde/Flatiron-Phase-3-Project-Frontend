@@ -4,7 +4,9 @@ import EventList from './EventList'
 function EventContainer({data, handleDeleteEvent, handleUpdateEvent}) {
     return(
     <>
-    <h1>Event List</h1>
+    <br/>
+    <h2>My Events</h2>
+    <br/>
         <EventList 
         data={data} 
         handleDeleteEvent={handleDeleteEvent}

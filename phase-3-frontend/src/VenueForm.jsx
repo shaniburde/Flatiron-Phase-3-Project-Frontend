@@ -50,7 +50,9 @@ function handleCapacityChange(e) {
 
   return (
     <>
-    <h1>Add a Venue</h1>
+    <br/>
+    <h2>Add a Venue</h2>
+    <br/>
     <form onSubmit={handleSubmit} className="form">
     <label className="input-label"  htmlFor="venue-name">Venue Name:</label>
         <input 
