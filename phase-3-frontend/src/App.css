@@ -1,9 +1,72 @@
-.card {
-    border-style: ridge;
-    text-align: center;
-    padding: 5%;
+@font-face {
+  font-family: Misto;
+  src: url('fonts/Misto.woff2');
 }
 
+@font-face {
+  font-family: Butler;
+  src: url('fonts/Butler.woff2');
+}
+.app{
+  background-color: #FEF7EC;
+  margin: 0
+}
+
+body{
+  font-family: Butler;
+  color: #f7c46d;
+}
+header{
+  text-align: center;
+  background-color: #183E4E;
+  height: fit-content;
+  padding-top: .5rem;
+  padding-bottom: 3rem;
+}
+
+h1{
+  font-size: 80px;
+  padding-bottom: 10px;
+  background-color: #183E4E;
+  font-family: Misto;
+  color: #f7c46d;
+  /* padding: 0px; */
+}
+
+input{
+  width: 100%;
+  font-family: Butler;
+  color: #f7c46d;
+}
+form{
+  padding: 10%;
+  text-align: center;
+}
+select{
+  font-size: 25px;
+  font-family: Butler;
+  padding: 10px;
+  border-radius: 15px;
+  border: none
+}
+.form{
+  padding: 15%;
+  background-color: #183e4e;
+  border-radius: 9%;
+  margin: 10%
+}
+
+.card {
+    text-align: center;
+    padding: 5%;
+    margin: 1%;
+    border-radius: 20px;
+    box-shadow: 5px 5px #183E4E;
+}
+.card:hover{
+  box-shadow: 5px 5px #ffca74;
+  transform: rotate(0.01turn);
+}
 .event-list{
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -18,4 +81,61 @@
 .edit-btn{
   float: left;
   border-radius: 30%;
+}
+
+.edit-event{
+  align-items: center;
+  justify-content: center; 
+  display: inline-block;
+  text-align: center;
+}
+
+.form-label{
+  font-size: medium;
+}
+
+.form-input{
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none
+}
+
+.input-label{
+  font-size: 30px;
+  text-shadow: 1px 1px #566b6b;
+  margin: 5px
+}
+
+.edit-event-input{
+  text-align: center;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  text-shadow: 1px 1px #293d50;
+  font-size: 20px;
+}
+
+.save-button{
+  align-content: center;
+  border-radius: 5px;
+}
+.card{
+  background-color: #98BEA2;
+}
+.nav-button{
+  text-decoration: none;
+  background-color: #98BEA2;
+  text-shadow: 1px 1px #293d50;
+  margin: 1%;
+  font-size: 30px;
+  color: #F5C675;
+  padding: 1.5%;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.nav-button:hover{
+  background-color: #F5C675;
+  color:#98BEA2;
+  text-shadow: 1px 1px #FEF7EC;
 }

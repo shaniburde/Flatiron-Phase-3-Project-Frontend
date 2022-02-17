@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import EditEvent from './EditEvent';
 
 function EventCard({data, handleDeleteEvent, handleUpdateEvent}) {
-    const [isEditing, setIsEditing] = useState(false);
+    const [isEditing, setIsEditing] = useState(true);
 
     const {id, attendees, date, event_type, price, venue } = data
     const {venue_name, address, capacity, phone } = venue
@@ -15,19 +15,14 @@ function EventCard({data, handleDeleteEvent, handleUpdateEvent}) {
       .then((deletedEvent) => handleDeleteEvent(deletedEvent))
     }
 
-    function setUpdatedEvent(updatedEvent) {
-      setIsEditing(false);
-      handleUpdateEvent(updatedEvent);
-    }
-
-
   return (
     <div className="card">
       {isEditing ? (
         <EditEvent
           id={id}
           data={data}
-          setUpdatedEvent={setUpdatedEvent}
+          setIsEditing={setIsEditing}
+          handleUpdateEvent={handleUpdateEvent}
         />
       ) : (
         <>
@@ -43,12 +38,12 @@ function EventCard({data, handleDeleteEvent, handleUpdateEvent}) {
           <div>Attendee Amount: {attendees}</div>
           <h6>Venue Info:</h6>
           <div>{venue_name}</div>
-          <div>{address}</div>
-          <div>{capacity}</div>
+          <div>Address: {address}</div>
+          <div>Capacity: {capacity}</div>
           <div>{phone}</div>
       </>
       )}
-      </div>
+    </div>
   )
 }
 export default EventCard;

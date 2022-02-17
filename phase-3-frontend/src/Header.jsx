@@ -5,8 +5,10 @@ import NavBar from './NavBar';
 export default function Header() {
   return (
     <>
-    <h1>music.ally</h1>
-    <NavBar />
+    <header>
+      <h1>music.ally</h1>
+      <NavBar />
+    </header>
     </>
   )
 }

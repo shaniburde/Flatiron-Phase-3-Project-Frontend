@@ -4,7 +4,8 @@ import EventContainer from './EventContainer';
 import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import EventForm from './EventForm';
-import VenueForm from './VenueForm'
+import VenueForm from './VenueForm';
+// import Login from './Login';
 
 function App() {
   const [data, setData] = useState([])
@@ -13,7 +14,7 @@ function App() {
       fetch('http://localhost:9292/')
       .then(r => r.json())
       .then(data => setData(data))
-    }, [setData])
+    }, [])
 
   function handleDeleteEvent(eventToDelete){
     const updatedEvents = data.filter((event) => {
@@ -39,6 +40,7 @@ function App() {
 
    return (
     <>
+    <div className="app">
     <Header/>
       <Routes>
             <Route exact path='/my-events' element={
@@ -50,6 +52,7 @@ function App() {
             <Route exact path='/create-event' element={<EventForm />} />
             <Route exact path='/create-venue' element={<VenueForm />} />
       </Routes>  
+    </div>
     </>
   );
 }

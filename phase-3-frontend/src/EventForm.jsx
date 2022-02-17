@@ -54,7 +54,7 @@ export default function EventForm({ addEvent }) {
       }, [])
 
       const venueOptions = venueData.map(({ id, venue_name }) => 
-      <option key={id} value={id}>{venue_name}</option>
+      <option  key={id} value={id}>{venue_name}</option>
       )
 
       function handleVenueSelect(e){
@@ -68,46 +68,59 @@ export default function EventForm({ addEvent }) {
 
   return (
     <>
-    <form onSubmit={handleSubmit}>
+    <h1>Add an Event</h1>
+    <form onSubmit={handleSubmit} className="form">
+    <label className="input-label" htmlFor="venue-data">Venues: </label>
+    <br/>
         <select id="venue-data" onChange={handleVenueSelect}>
             {venueOptions}
         </select>
-        <label htmlFor="attendees">Attendees:</label>
+        <br/>
+        <br/>
+        <label className="input-label" htmlFor="attendees">Attendees:</label>
         <input 
         name="attendees"
         type="number"
         placeholder="Amount of people attending..."
         value={attendees}
         onChange={handleAttendeesChange}
-        >
-        </input>
-        <label htmlFor="event-type">Type of Event:</label>
+        className="form-input"
+        ></input>
+        <br/>
+        <br/>
+        <label className="input-label" htmlFor="event-type">Type of Event:</label>
         <input 
         name="event-type"
         type="string"
         placeholder="Type of event..."
         value={eventType}
         onChange={handleEventTypeChange}
-        >
-        </input>
-        <label htmlFor="price">Ticket Price:</label>
+        className="form-input"
+        ></input>
+        <br/>
+        <br/>
+        <label className="input-label" htmlFor="price">Ticket Price:</label>
         <input 
         name="price"
         type="number"
         placeholder="Ticket price..."
         value={price}
         onChange={handlePriceChange}
-        >
-        </input>
-        <label htmlFor="date">Date:</label>
+        className="form-input"
+        ></input>
+        <br/>
+        <br/>
+        <label className="input-label" htmlFor="date">Date:</label>
         <input 
         name="date"
         type="date"
         placeholder="Event date..."
         value={date}
         onChange={handleDateChange}
-        >
-        </input>
+        className="form-input"
+        ></input>
+        <br/>
+        <br/>
         <button className="form-input" type="submit">Create Event</button> 
     </form>
         
