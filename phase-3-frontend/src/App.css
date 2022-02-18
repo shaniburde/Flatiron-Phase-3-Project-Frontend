@@ -68,6 +68,7 @@ h2{
 }
 
 h3{
+  margin: 0 auto;
   font-family: Misto;
   font-size: 30px;
   text-align: center;
@@ -104,7 +105,7 @@ input:hover{
   box-shadow: 0px 0px 4px #555252;
 }
 form{
-  padding: 2%;
+  padding: 1%;
   text-align: center;
 }
 select{
@@ -115,24 +116,26 @@ select{
   border: none
 }
 .form{
-  padding: 10%;
+  padding: 5%;
   background-color: #183e4e;
-  border-radius: 100px;
+  border-radius: 50px;
   margin-top: 0px;
-  margin-right: 150px;
-  margin-left: 150px;
+  margin-right: 450px;
+  margin-left: 450px;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     background-color: #98BEA2;  
     align-content: center;
-    height: 450px;
+    height: 350px;
     width: 300px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     text-align: center;
-    padding: 3%;
+    padding: 9%;
     border-radius: 20px;
     box-shadow: 5px 5px #183E4E;
     transition: .7s;
@@ -217,13 +220,15 @@ select{
 }
 
 .form-input{
+  margin-top: 30px;
   font-size: 25px;
   padding: 10px;
   border-radius: 15px;
   border: none;
+  transition: .4s;
 }
 .form-input:hover{
-  box-shadow: 0px 0px 15px rgb(0, 0, 0)
+  box-shadow: 0px 0px 35px rgb(0, 0, 0)
 }
 button.form-input{
   letter-spacing: 10px;
@@ -231,10 +236,11 @@ button.form-input{
   color:#98BEA2;
   background-color:#F5C675;
   text-shadow: 2px 2px 2px#112831;
+  box-shadow: 0px 7px 0px #000000;
 }
 button.form-input:hover{
- box-shadow: 3px 3px 3px #000000;
- background-color:#98BEA2;
+  background-color:#98BEA2;
+  box-shadow: 0px 2px 0px rgb(0, 0, 0);
  color:#F5C675;
 }
 
@@ -306,7 +312,6 @@ button.form-input:hover{
   border-bottom: none;
 }
 .venue-info{
-  
   background-color:#F5C675;
   color: #FEF7EC;
   text-shadow: 2px 1px 1px#112831;
@@ -314,6 +319,7 @@ button.form-input:hover{
   border-radius: 20px;
   padding: 5px;
   transition: .5s;
+  align-self: flex-end;
 }
 .venue-info:hover{
   text-decoration: underline;
@@ -322,7 +328,10 @@ button.form-input:hover{
   box-shadow: 0px  1px  #112831;
 }
 .delete-edit-buttons{
-  padding: 4%;
+  padding-bottom: 10px;
+}
+.delete-edit-buttons:hover{
+
 }
 .address{
   font-family: Butler;
@@ -383,6 +392,8 @@ box-shadow: 0px  1px  #112831;
   align-items: center;
   text-align: center;
   justify-content: center;
-  box-shadow: 2px 2px 2px #000000;
-
+  box-shadow: 2px 3px 0px #000000;
+}
+.stats:hover{
+  box-shadow: 2px 3px 0px #F5C675;
 }

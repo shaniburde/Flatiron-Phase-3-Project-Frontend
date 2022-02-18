@@ -39,11 +39,14 @@ function EventCard({data, handleDeleteEvent, handleUpdateEvent}) {
               </span>
         </button>
         <button onClick={handleDelete} className="delete-event-btn">X</button>
+        <br/>
+        <br/>
         </div>
           <h3>{user.username} {event_type}</h3>
           <h5>{dateItem}</h5>
           <div className="price">🎟️ ${price}</div>
           <div className="attendees">Attendees: {attendees}</div>
+          <br/>
           <h5 className="venue-info" onClick={() => setVisible(!visible)}>Venue Info</h5>
       </>
       )} </div>) : (
