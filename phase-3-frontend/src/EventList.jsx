@@ -1,9 +1,17 @@
 import React, { useState } from 'react';
-import EventCard from './EventCard'
+import EventCard from './EventCard';
+import Search from './Search';
 
-function EventList({data, handleDeleteEvent, handleUpdateEvent}) {
-    
+function EventList({data, handleDeleteEvent, handleUpdateEvent}) { 
   const [dataIndex, setDataIndex] = useState(0)
+  // const username = data['user'].username
+  // console.log(username)
+
+  // const [searchTerm, setSearchTerm] = useState('')
+
+  //   const filteredData = data.filter(({username}) => {
+  //       return username.toLowerCase().includes(searchTerm.toLowerCase())
+  //     })
 
   
   const eventList = data
@@ -22,6 +30,7 @@ function EventList({data, handleDeleteEvent, handleUpdateEvent}) {
 
   return (
     <>
+    {/* <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/> */}
     <div className="event-list">
     {eventList}
     </div>

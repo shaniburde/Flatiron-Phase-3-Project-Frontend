@@ -5,7 +5,7 @@ function EventCard({data, handleDeleteEvent, handleUpdateEvent}) {
     const [isEditing, setIsEditing] = useState(false);
     const [visible, setVisible] = useState(true)
 
-    const {id, attendees, date, event_type, price, venue } = data
+    const {id, attendees, date, event_type, price, venue, user} = data
     const {venue_name, address, capacity, phone } = venue
 
     function handleDelete(){
@@ -40,7 +40,7 @@ function EventCard({data, handleDeleteEvent, handleUpdateEvent}) {
         </button>
         <button onClick={handleDelete} className="delete-event-btn">X</button>
         </div>
-          <h3>{event_type}</h3>
+          <h3>{user.username} {event_type}</h3>
           <h5>{dateItem}</h5>
           <div className="price">🎟️ ${price}</div>
           <div className="attendees">Attendees: {attendees}</div>

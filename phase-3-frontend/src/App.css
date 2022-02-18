@@ -124,9 +124,10 @@ select{
 }
 
 .card {
+    background-color: #98BEA2;  
     align-content: center;
-    height: 500px;
-    width: 200px;
+    height: 450px;
+    width: 300px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -161,7 +162,9 @@ select{
   max-height: 105rem;
   grid-template-columns: auto auto auto auto;
   gap: 10% 1%;
-  padding: 5%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
   min-width: 50rem;
 
 }
@@ -272,11 +275,7 @@ button.form-input:hover{
     transform: translateY(2px);
     box-shadow: 0px 0px 6px #FEF7EC;
 }
-.card{
-  width: 70%;
-  height: 100%;
-  background-color: #98BEA2;
-}
+
 .nav-button{
   font-family: Misto;
   letter-spacing: 3px;
@@ -307,6 +306,7 @@ button.form-input:hover{
   border-bottom: none;
 }
 .venue-info{
+  
   background-color:#F5C675;
   color: #FEF7EC;
   text-shadow: 2px 1px 1px#112831;
@@ -344,6 +344,7 @@ button.form-input:hover{
   padding: 6px;
 }
 .venue-card{
+  padding: 20%;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -353,7 +354,7 @@ button.form-input:hover{
   font-size: 30px;
   border-radius: 10px;;
   border: none;
-  margin: 1%;
+  margin-bottom: 5%;
   padding: 1%;
   letter-spacing: 5px;
   font-family: Misto;
@@ -372,4 +373,16 @@ box-shadow: 0px  1px  #112831;
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.stats{
+  background-color: #8daa95;
+  border-radius: 650px;
+  padding: 25px;
+  margin-right: 600px;
+  margin-left: 600px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 2px 2px 2px #000000;
+
 }

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import EventList from './EventList'
+import EventList from './EventList';
+
 
 function EventContainer({data, handleDeleteEvent, handleUpdateEvent}) {
+
     return(
     <>
     <br/>
