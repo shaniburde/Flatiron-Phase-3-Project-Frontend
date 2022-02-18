@@ -4,18 +4,20 @@ import Search from './Search';
 
 function EventList({data, handleDeleteEvent, handleUpdateEvent}) { 
   const [dataIndex, setDataIndex] = useState(0)
-  // const username = data['user'].username
   // console.log(username)
 
-  // const [searchTerm, setSearchTerm] = useState('')
+  const [searchTerm, setSearchTerm] = useState("")
 
   //   const filteredData = data.filter(({username}) => {
   //       return username.toLowerCase().includes(searchTerm.toLowerCase())
   //     })
 
   
-  const eventList = data
+  const eventList = [...data]
     .slice(dataIndex, dataIndex + 8)
+    .filter((data) => { 
+      return data.user.username.toLowerCase().includes(searchTerm.toLowerCase());
+    })
     .map((data) => 
     <EventCard
         key={data.id}
@@ -30,7 +32,7 @@ function EventList({data, handleDeleteEvent, handleUpdateEvent}) {
 
   return (
     <>
-    {/* <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/> */}
+    <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
     <div className="event-list">
     {eventList}
     </div>
