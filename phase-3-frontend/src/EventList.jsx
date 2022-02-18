@@ -14,10 +14,11 @@ function EventList({data, handleDeleteEvent, handleUpdateEvent}) {
 
   
   const eventList = [...data]
+  .filter((data) => { 
+    return data.user.username.toLowerCase().includes(searchTerm.toLowerCase());
+  })
     .slice(dataIndex, dataIndex + 8)
-    .filter((data) => { 
-      return data.user.username.toLowerCase().includes(searchTerm.toLowerCase());
-    })
+
     .map((data) => 
     <EventCard
         key={data.id}
