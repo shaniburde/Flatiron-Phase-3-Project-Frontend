@@ -32,7 +32,7 @@ function EventList({data, handleDeleteEvent, handleUpdateEvent}) {
 
   return (
     <>
-    <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+    <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
     <div className="event-list">
     {eventList}
     </div>

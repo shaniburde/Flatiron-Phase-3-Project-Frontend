@@ -8,20 +8,6 @@
   src: url('fonts/Butler.woff2');
 }
 
-/* body {
-  animation: fadeInAnimation ease 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-} */
-
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-   }
-}
 .app{
   background-color: #FEF7EC;
   height: 100rem;
@@ -52,11 +38,7 @@ h1{
   text-shadow: 2px 5px #8daa95;
   letter-spacing: 10px;
 }
-/* h1:hover{
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-} */
+
 
 h2{
   font-family: Misto;
@@ -129,8 +111,8 @@ select{
     flex-direction: column;
     background-color: #98BEA2;  
     align-content: center;
-    height: 350px;
-    width: 300px;
+    height: 450px;
+    width: 230px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -331,7 +313,7 @@ button.form-input:hover{
   padding-bottom: 10px;
 }
 .delete-edit-buttons:hover{
-
+  text-align: justify;
 }
 .address{
   font-family: Butler;
@@ -386,9 +368,9 @@ box-shadow: 0px  1px  #112831;
 .stats{
   background-color: #8daa95;
   border-radius: 650px;
-  padding: 25px;
-  margin-right: 600px;
-  margin-left: 600px;
+  padding: 45px;
+  margin-right: 400px;
+  margin-left: 400px;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -396,4 +378,24 @@ box-shadow: 0px  1px  #112831;
 }
 .stats:hover{
   box-shadow: 2px 3px 0px #F5C675;
+}
+input.search-bar{
+  background-color: #F5C675;
+  border-radius: 60px;
+  width: 40%;
+  color: #98BEA2;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 2px #112831;
+  font-size: 25px;
+  font-family: Misto;
+  letter-spacing: 5px;
+  border: none;
+
+}
+.search-container{
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 40px;
 }

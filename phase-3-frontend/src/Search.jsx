@@ -2,8 +2,7 @@ import React from 'react'
 
 export default function Search({ searchTerm, setSearchTerm}) {
   return (
-      <div>
-        <h3>Search</h3>
+      <div className="search-container">
         <input
         className="search-bar"
         type="text"
