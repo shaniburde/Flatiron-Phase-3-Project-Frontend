@@ -153,24 +153,7 @@ select{
   min-width: 50rem;
 
 }
-.delete-event-btn{
-  font-size: 17px;
-  width: 35px;
-  height: 35px;
-  float: right;
-  border-radius: 50%;
-  border: none;
-  transition: .3s;
-  color: transparent;
-  background-color: transparent;
-  transition: .3s;
-}
 
-.delete-event-btn:hover{
-  color:rgba(0, 0, 0, 0.644);
-  background-color: #FEF7EC;
-  box-shadow: 0px 0px 3px #183E4E;
-}
 .edit-btn{
   display: hidden;
   width: 35px;
